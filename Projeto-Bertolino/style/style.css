@@ -1,0 +1,452 @@
+/* DESENVOLVIDO POR KAUÃ.HERMER */
+footer .DEV{
+  background-color: #afafaf8e;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+footer .DEV p{
+  color: #000000;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/* GERAL */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body{
+  background-color: black;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.interface{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+}
+
+ion-icon{
+  font-size: large;
+}
+
+h2{
+  margin-top: 60px;
+  color: #fff;
+  font-size: 34px;
+  text-align: center;
+}
+
+h2 span{
+  color: orange;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+span{
+  color: orange;
+}
+
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+  padding: 40px 4%;
+}
+
+header > .interface{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a{
+  color: #9d9d9d;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+}
+
+header a:hover{
+  color: #fff;
+  transform: scale(1.0.5);
+}
+
+header nav ul{
+  list-style: none;
+}
+
+header nav.menu-desktop ul li{
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.contato button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: orange;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.topo-site .contato{
+  margin-top: 88px;
+}
+
+button:hover{
+  box-shadow: 0px 0px 8px #ffbb00;
+  transform: scale(1.05);
+}
+
+.logo img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 40px 10px #e396231d;
+  margin-left: 200px; /***************/
+}
+
+
+/* ESTILO DO TOPO DO SITE */
+
+section .topo-site{
+  padding: 40px 4%;
+}
+
+.topo-site .seta-baixo{
+  display: grid;
+  place-items: center;
+  margin-top: 100px;
+}
+
+.topo-site .seta-baixo ion-icon{
+  position: relative;
+  color: orange;
+  font-size: 50px;
+  animation: flutuar 1s ease-in-out infinite ;
+}
+
+/* MOVIMENTO DA SETA */
+@keyframes flutuar{
+  0%{
+    top: 0;
+  }
+  100%{
+    top: 30px;
+  }
+}
+/* MOVIMENTO DA SETA  */
+
+.topo-site h1{
+  color: #fff;
+  font-size: 48px;
+  margin-top: 30px;
+}
+
+.topo-site h1 span{
+  color: #ffbb00;
+}
+
+.topo-site p{
+  color: #fff;
+  margin: 40px 0;
+  width: 500px;
+}
+
+.localizacao iframe{
+  height: 300px;
+  width: 300px;
+  border-radius: 4px;
+  box-shadow: 0 0 40px 10px #e396231d;
+  margin: 0 132%;
+  margin-top: 30px;
+}
+
+.botao-loc button{
+  margin: 0 150%;
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: orange;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+/* ESTILO PREÇOS */
+
+section .precos{
+  padding: 40px 4%;
+}
+
+section .precos .flex{
+  gap: 60px;
+}
+
+.precos .precos-box{
+  color: #fff;
+  padding: 40px;
+  width: 500px;
+  height: 520px;
+  margin-top: 45px;
+  border-radius: 20px;
+  transition: .2s;
+}
+
+.precos .precos-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffffff49;
+}
+
+.precos .precos-box .corteimg{
+  background-color: #fff;
+  background-image: url(../imgs/corte.png) ;
+  width: 120px;
+  height: 120px;
+  background-color: orange;
+  background-size: 90px 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.precos .precos-box .barbaimg{
+  background-color: #fff;
+  background-image: url(../imgs/barba.png) ;
+  width: 120px;
+  height: 120px;
+  background-color: orange;
+  background-size: 90px 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.precos .precos-box .barba-corte{
+  background-color: #fff;
+  background-image: url(../imgs/barba+cabelo.png) ;
+  width: 120px;
+  height: 120px;
+  background-color: orange;
+  background-size: 90px 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.precos .precos-box h3{
+  font-size: 26px;
+  margin: 15px 0;
+}
+
+/* FOOTER */
+
+footer .interfase{
+  padding: 60px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d;
+  margin-top: 100px;
+}
+
+footer .interfase .logo-footer img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+footer .interfase .flex{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.redes button{
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  border: none;
+  outline: none;
+  background-color: #ffbb00;
+  border-radius:50% ;
+  cursor: pointer;
+  transition: .2s;
+}
+
+footer .interfase button:hover{
+  transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 900px) {
+
+  /* geral */
+
+  .flex{
+    flex-direction: column;
+  }
+
+  /* cabeçalho */
+  .menu-desktop , .contato{
+    display: none;
+  }
+
+  .logo img{
+    margin-left: 0;
+  }
+  
+/* MENU MOBILE */
+
+.menu-mobile{
+  background-color: #000;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999999;
+  width: 0%;
+  overflow: hidden;
+  transition: .4s;
+  display: block;
+}
+
+.menu-mobile.abrir-menu{
+  width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+  display: block;
+}
+
+.btn-menu ion-icon{
+  color: #fff;
+  font-size: 50px;
+}
+
+.menu-mobile nav ul{
+  text-align: right;
+}
+
+.menu-mobile nav ul li a{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 20px 4%;
+  display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+  background-color: orange;
+  color: #000;
+}
+
+.menu-mobile .btn-fechar ion-icon {
+  color: #fff;
+  font-size: 60px;
+}
+
+.menu-mobile .btn-fechar ion-icon:hover {
+  color: #000000;
+  font-size: 60px;
+  background-color: orange;
+}
+
+.menu-mobile .btn-fechar{
+  width: 60px;
+  height: 60px;
+}
+
+.overlay-menu{
+  background-color: #000000a9;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 88888;
+  display: none;
+}
+
+  /* topo site */
+
+  .topo-site h1{
+    font-size: 25px;
+    margin: 0 10%;
+  }
+
+  .topo-site p{
+    color: #fff;
+    margin: 40px 12%;
+    font-size: 16px;
+    width: 300px;
+  }
+
+  .localizacao iframe{
+    margin: 0px 12%;
+  }
+  
+  .botao-loc button{
+    margin: 0 90px;
+  }
+
+  .logo img{
+    height: 100px;
+    width: 100px;
+  }
+
+  /* PRECOS */
+  section .precos{
+    padding: 40px 8%;
+  }
+
+  .precos .precos-box{
+    width: 320px;
+    height: 470px;
+    display: grid;
+    place-items: center;
+  }
+
+  .precos .precos-box .corteimg{
+    width: 100px;
+    height: 100px;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .precos .precos-box .barbaimg{
+    width: 100px;
+    height: 100px;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .precos .precos-box .barba-corte{
+    width: 100px;
+    height: 100px;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .precos .precos-box h3{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .precos .precos-box p{
+    font-size: 16px;
+  }
+  
+}
