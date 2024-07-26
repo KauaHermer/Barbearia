@@ -1,0 +1,310 @@
+/* DESENVOLVIDO POR KAUÃ.HERMER */
+footer .DEV{
+  background-color: #afafaf8e;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+footer .DEV p{
+  color: #000000;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* GERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  body{
+    background-color: black;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .interface{
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .flex{
+    display: flex;
+  }
+  
+  ion-icon{
+    font-size: large;
+  }
+  
+  h2{
+    margin-top: 60px;
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+  }
+  
+  h2 span{
+    color: orange;
+  }
+  
+  .menu-mobile {
+    display: none;
+  }
+  
+  span{
+    color: orange;
+  }
+
+  p{
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* ESTILO DO CABEÇALHO */
+
+header{
+    padding: 40px 4%;
+  }
+  
+  header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header a{
+    color: #9d9d9d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+  }
+  
+  header a:hover{
+    color: #fff;
+    transform: scale(1.0.5);
+  }
+  
+  header nav ul{
+    list-style: none;
+  }
+  
+  header nav.menu-desktop ul li{
+    display: inline-block;
+    padding: 0 40px;
+  }
+  
+  .contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: orange;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+  }
+  
+  button:hover{
+    box-shadow: 0px 0px 8px #ffbb00;
+    transform: scale(1.05);
+  }
+  
+  .logo a img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px 10px #e396231d;
+    margin-left: 200px;
+  }
+
+  /* ESTILO BOX */
+
+  section .interface .flex{
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  section .flex{
+    gap: 60px;
+  }
+  
+  .catalogo .catalogo-box{
+    color: #fff;
+    width: 200px;
+    height: 250px;
+    margin-top: 70px;
+    border-radius: 20px;
+  }
+
+  .catalogo .catalogo-box .corte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .catalogo .catalogo-box .corte img{
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+  }
+
+
+
+  /* FOOTER */
+
+footer .interfase{
+  padding: 60px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d;
+  margin-top: 100px;
+}
+
+footer .interfase .logo-footer img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+footer .interfase .flex{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.redes button{
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  border: none;
+  outline: none;
+  background-color: #ffbb00;
+  border-radius:50% ;
+  cursor: pointer;
+  transition: .2s;
+}
+
+footer .interfase button:hover{
+  transform: scale(1.1);
+}
+
+
+  /* ESTILO MOBILE */
+
+  @media screen and (max-width: 900px) {
+
+    /* geral */
+
+    .flex{
+      flex-direction: column;
+    }
+  
+    /* cabeçalho */
+    .menu-desktop , .contato{
+      display: none;
+    }
+  
+    .interface .logo img{
+      margin-left: 0;
+    }
+
+    h2{
+     
+      text-align: center;
+      width: 300px;
+      font-size: 25px;
+    }
+    
+  /* MENU MOBILE */
+  
+  .menu-mobile{
+    background-color: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999;
+    width: 0%;
+    overflow: hidden;
+    transition: .4s;
+    display: block;
+  }
+  
+  .menu-mobile.abrir-menu{
+    width: 70%;
+  }
+  
+  .menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+  }
+  
+  .btn-menu ion-icon{
+    color: #fff;
+    font-size: 50px;
+  }
+  
+  .menu-mobile nav ul{
+    text-align: right;
+  }
+  
+  .menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 4%;
+    display: block;
+  }
+  
+  .menu-mobile nav ul li a:hover{
+    background-color: orange;
+    color: #000;
+  }
+  
+  .menu-mobile .btn-fechar ion-icon {
+    color: #fff;
+    font-size: 60px;
+  }
+  
+  .menu-mobile .btn-fechar ion-icon:hover {
+    color: #000000;
+    font-size: 60px;
+    background-color: orange;
+  }
+  
+  .menu-mobile .btn-fechar{
+    width: 60px;
+    height: 60px;
+  }
+  
+  .overlay-menu{
+    background-color: #000000a9;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+  }
+
+  /* PRECOS */
+  section {
+    padding: 40px 12%;
+  }
+
+  .catalogo .catalogo-box{
+    margin-top: 40px;
+    width: 250px;
+    height: 250px;
+  }
+
+}
+
+
+
+  
